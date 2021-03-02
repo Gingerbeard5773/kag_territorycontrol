@@ -11,9 +11,9 @@
 
 void onInit(CBlob@ this)
 {
-	this.Tag("upkeep building");
-	this.set_u8("upkeep cap increase", 0);
-	this.set_u8("upkeep cost", 50);
+	//this.Tag("upkeep building");
+	//this.set_u8("upkeep cap increase", 0);
+	//this.set_u8("upkeep cost", 50);
 
 	this.Tag("big shop");
 	this.Tag("invincible");
@@ -87,7 +87,7 @@ void onInit(CBlob@ this)
 		s.spawnNothing = true;
 	}
 	{
-		ShopItem@ s = addShopItem(this, "Sell Egg (1)", "$COIN$", "coin-150", "Sell 1 rescued Egg for 150 coins.");
+		ShopItem@ s = addShopItem(this, "Sell Egg (1)", "$COIN$", "coin-90", "Sell 1 rescued Egg for 90 coins.");
 		AddRequirement(s.requirements, "blob", "egg", "Rescued Egg", 1);
 		s.spawnNothing = true;
 	}
